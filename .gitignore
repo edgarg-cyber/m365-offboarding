@@ -1,0 +1,49 @@
+# Copy this file into the root of every repo before the first commit.
+
+# Secrets and credentials
+.env
+.env.*
+*.pfx
+*.pem
+*.key
+*.cer
+*.p12
+secrets.*
+*secret*.json
+*credential*
+*.kdbx
+
+# Script output and logs (these can hold real tenant data)
+output/
+logs/
+backups/
+*.log
+!sample-output/*.log
+inventory.csv
+identity-audit-*.csv
+identity-audit-*.html
+response-*.html
+signins-*.csv
+offboarding-*.csv
+onboarding-*.csv
+
+# Real input files. Only the fake samples in sample-output/ belong in git.
+new-hires.csv
+!sample-output/
+!sample-output/**
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# PowerShell and editors
+*.ps1xml.bak
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
